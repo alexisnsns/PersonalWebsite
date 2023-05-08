@@ -20,26 +20,26 @@
   <div class="cursor2"></div>
 
   <div id="site-header" >
-  <img src="images/hands.png" alt="hands" id="hands">
+  <img src="images/hands.png" alt="hands logo" id="hands">
     <h1 id="pagetitle"> <a href="#top"> Alexis NS </a> </h1>
     <div id="links">
       <a href="#top">About /</a>
       <a href="#stacktitle"> Stack /</a>
-      <a href="#portfoliotitle"> Portfolio /</a>
+      <a href="#portfolio-title"> Portfolio /</a>
       <a href="#bottom"> Contact </a>
     </div>
   </div>
 
-  <img src="images/statue.gif" alt="statue" id="statue" >
+  <img src="images/statue.gif" alt="gif of a statue" id="statue">
 
   <div class="container">
-    <div class="typed-out" id="title">
+    <div class="typed-out" id="typewriter-intro">
       <h1> Hi! I'm Alexis. </h1>
     </div>
   </div>
 
-  <div>
-    <h1 id="introduction"> I am completing my training at
+  <div id="introduction">
+      I am completing my training at
       <a style="color:#f542d1" target="_blank" href='https://www.lewagon.com/web-development-course'> Le Wagon</a>,
       <br> a web development school. <br>
       <br> I have a passion for all things technology and design,
@@ -52,43 +52,42 @@
 
   <!-- MY STACK -->
 
-  <div id="stacktitle"> My stack <br> </div>
-
+  <div class="title" id="stack-title"> My stack <br> </div>
   <img src="images/pinkarrow.png" alt="arrow" id="pinkarrowstack">
 
-  <div id="frontstack">Frontend</div>
-  <div id="backstack">Backend</div>
-  <div id="framestack">Devops/Frameworks</div>
 
+    <!-- do in only one  -->
+  <div id="stack">Frontend Backend Devops/Frameworks</div>
 
-  <div id="leftline"></div>
-  <div id="midline"></div>
-  <div id="rightline"></div>
-
+  <div class="line" id="left-line"></div>
+  <div class="line" id="mid-line"></div>
+  <div class="line" id="right-line"></div>
 
   <div class="icons">
-    <div class="fronties">
-      <i id="html" class="devicon-html5-plain"></i>
-      <i id="css" class="devicon-css3-plain"></i>
-      <i id="jsfront" class="devicon-javascript-plain"></i>
+
+    <div id="front-icons">
+      <i class="devicon-html5-plain"></i>
+      <i class="devicon-css3-plain"></i>
+      <i class="devicon-javascript-plain"></i>
     </div>
 
-    <div class="backies">
-      <i id="ruby" class="devicon-ruby-plain"></i>
-      <i id="jsback" class="devicon-javascript-plain"></i>
-      <i id="postgresql" class="devicon-postgresql-plain"></i>
+    <div id="back-icons">
+      <i class="devicon-ruby-plain"></i>
+      <i class="devicon-javascript-plain"></i>
+      <i class="devicon-postgresql-plain"></i>
     </div>
 
-    <div class="framies">
-      <i id="aws"  class="devicon-amazonwebservices-original"></i>
-      <i id="heroku" class="devicon-heroku-plain"></i>
-      <i id="rails"  class="devicon-rails-plain"></i>
+    <div id="framework-icons">
+      <i class="devicon-amazonwebservices-original"></i>
+      <i class="devicon-heroku-plain"></i>
+      <i class="devicon-rails-plain"></i>
     </div>
-</div>
+  </div>
+
 
 <div class="languages">
-      <p id="frontlanguages">Html<br>Css<br> Javascript</p>
-      <p id="backlanguages">Ruby <br> Javascript <br> Postgresql </p>
+      <p id="front-languages">Html<br>Css<br> Javascript</p>
+      <p id="back-languages">Ruby <br> Javascript <br> Postgresql </p>
       <nobr> <p id="frameworks"> AWS <br> Heroku <br> Rails </nobr> </p>
 </div>
 
@@ -96,22 +95,39 @@
 <!-- MY PORTFOLIO -->
 
 
-  <h1 id="portfoliotitle"> My portfolio </h1>
+  <h1 class="title" id="portfolio-title"> My portfolio </h1>
 
-  <a href="http://www.myfrenchtriathlon.com/" target="_blank">  <img src="images/MFT.png" id="mftscreen"> </a>
-  <div id="mfttitle"> My French Triathlon <a href="https://github.com/alexisnsns/triathlonwebsite" target="_blank" class="fa fa-github" ></a> </div>
 
-  <a href="http://www.letsbuild.lol/" target="_blank">  <img src="images/TBG.png" id="tbgscreen"> </a>
-  <div id="tbgtitle"> Tech Bro Generator <a href="https://github.com/alexisnsns/techbrogenerator" target="_blank" class="fa fa-github" ></a> </div>
+
+
+  <div class="portfolio">
+    <div id="mfttitle">  My French Triathlon </div>
+    <div id="clienttitle"> Your next project? </div>
+    <div id="tbgtitle"> Tech Bro Generator </div>
+  </div>
+
+
+  <a href="https://github.com/alexisnsns/triathlonwebsite" target="_blank" class="fa fa-github" ></a>
+
+  <a href="http://www.myfrenchtriathlon.com/" target="_blank">
+    <img src="images/MFT.png" id="mftscreen"> </a>
+    <a href="https://github.com/alexisnsns/triathlonwebsite" target="_blank" class="fa fa-github" ></a>
+
+
+  <a href="http://www.letsbuild.lol/" target="_blank"> <img src="images/TBG.png" id="tbgscreen"> </a>
+  <a href="https://github.com/alexisnsns/techbrogenerator" target="_blank" class="fa fa-github" ></a>
+  </div>
 
   <a href="mailto:hello@alexisns.com" target="_blank">  <img src="images/client.png" id="clientscreen"> </a>
-  <div id="clienttitle"> Your next project? </div>
+
 
 <!-- GET IN TOUCH -->
 
 
-  <div id="inbox-message">
-    <p style="font-size: 2vw"> Get in touch </p>
+
+  <div class="title" id="contact-title"> Get in touch </div>
+
+  <div id="contact-message">
     <p  style="color:#f542d1" > My inbox is always open. <br> Whether you have a question or just want to say Hi, <br> I’ll try my best to get back to you! </p>
   </div>
 

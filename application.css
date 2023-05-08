@@ -8,32 +8,53 @@
 body {
   background-color: black;
   color: white;
+  font-size: 1.1vw;
 }
 
+a {
+  color: white;
+}
 a:link {
   text-decoration: none;
-  color: white;
   transition: all 500ms;
-
 }
 
 a:visited {
-  color: white;
   text-decoration: none;
-
 }
 
 a:hover {
   text-decoration: line-through;
   color: #f542d1;
   font-size: 1.3vw;
-
 }
 
 a:active {
   text-decoration: none;
-  color: white;
+}
 
+
+/* TITLES */
+
+.title{
+  position: absolute;
+  width: 100%;
+  font-size: 2vw;
+  text-align: center;
+  letter-spacing: 0.15vw;
+  font-weight: lighter;
+}
+#stack-title {
+  position: absolute;
+  top: 50vw;
+}
+#portfolio-title {
+  position: absolute;
+  top: 80vw;
+}
+#contact-title {
+  position: absolute;
+  top: 105vw;
 }
 
 /* HEADER */
@@ -94,7 +115,7 @@ a:active {
 
 /* INTRODUCTION */
 
-#title {
+#typewriter-intro {
   letter-spacing: 0.2vw;
   color: white;
   font-weight: bold;
@@ -108,7 +129,6 @@ a:active {
 #introduction {
   letter-spacing: 0.1vw;
   font-weight: lighter;
-  font-size: 1.1vw;
   position: absolute;
   left: 3vw;
   top: 22vw;
@@ -128,15 +148,6 @@ a:active {
 
 /* STACK */
 
-#stacktitle {
-  position: absolute;
-  top: 50vw;
-  width: 100%;
-  font-size: 2vw;
-  text-align: center;
-  letter-spacing: 0.15vw;
-}
-
 #pinkarrowstack {
   position: absolute;
   top: 50vw;
@@ -148,138 +159,64 @@ a:active {
 
 /* STACK TITLES */
 
-#frontstack {
+#stack {
   position: absolute;
-  font-size: 1.1vw;
   top: 56vw;
-  left: 28%;
-  text-decoration: underline;
-}
-
-#backstack {
-  position: absolute;
-  font-size: 1.1vw;
-  top: 56vw;
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  text-decoration: underline;
-}
-
-#framestack {
-  position: absolute;
-  font-size: 1.1vw;
-  top: 56vw;
-  left: 66%;
-  text-decoration: underline;
+  left: 24%;
+  word-spacing: 13vw;
 }
 
 /* LINES SEPARATING STACK CATEGORIES */
 
-#leftline {
+
+.line {
   position: absolute;
   border-left: 0.05vw solid white;
   height: 14vw;
   width: 0.05vw;
-  left: 27%;
-  top: 58vw;
-  z-index: 2;
+  top: 30vw;
+  z-index: 10;
+}
+
+#leftline {
+  position: absolute;
+  left: 16.5%;
 }
 
 #midline {
   position: absolute;
-  border-left: 0.05vw solid white;
-  height: 14vw;
-  width: 0.05vw;
-  top: 58vw;
-  z-index: 2;
   left: 46.5%;
 }
 
 #rightline {
   position: absolute;
-  border-left: 0.05vw solid white;
-  height: 14vw;
-  width: 0.05vw;
   left: 65%;
-  top: 58vw;
-  z-index: 2;
 }
+
+
 
 /* ICONS */
 
 .icons {
+  position: absolute;
   font-size: 2.5vw;
   writing-mode: vertical-rl;
+  display: inline-block;
+  top: 58.5vw;
+  height: 20vw;
 }
-
-/* FRONT ICONS */
-
-.fronties {
+#front-icons {
   position: absolute;
-  left: 25%;
+  left: 23vw;
 }
-
-#html {
+#back-icons {
   position: absolute;
-  top: 58vw;
+  left: 44vw;
 }
-
-#css {
+#framework-icons {
   position: absolute;
-  top: 62.5vw;
+  left: 63vw;
 }
-
-#jsfront {
-  position: absolute;
-  top: 67vw;
-}
-
-/* BACK ICONS */
-
-.backies {
-  position: absolute;
-  left: 44%;
-}
-
-#ruby {
-  position: absolute;
-  top: 58vw;
-}
-
-#jsback {
-  position: absolute;
-  top: 62.5vw;
-}
-
-#postgresql {
-  position: absolute;
-  top: 67vw;
-}
-
-
-/* DEVOPS / FRAMEWORKS ICONS */
-
-.framies {
-  position: absolute;
-  left: 63%;
-}
-
-#aws {
-  position: absolute;
-  top: 58vw;
-}
-
-#heroku {
-  position: absolute;
-  top: 62.5vw;
-}
-
-#rails {
-  position: absolute;
-  top: 67vw;
-}
-
 
 /* STACK TEXT */
 
@@ -287,20 +224,18 @@ a:active {
   position: absolute;
   top: 57.5vw;
   line-height: 4vw;
-  font-size: 1.1vw;
   letter-spacing: 0.15vw;
+  text-align: left;
 }
 
-#frontlanguages {
+#front-languages {
   position: absolute;
   left: 29vw;
 }
-
-#backlanguages {
+#back-languages {
   position: absolute;
   left: 48.5vw;
 }
-
 #frameworks {
   position: absolute;
   left: 67vw;
@@ -308,42 +243,22 @@ a:active {
 
 /* PORTFOLIO */
 
-
-#portfoliotitle {
+.portfolio {
   position: absolute;
-  top: 80vw;
   width: 100%;
-  font-size: 2vw;
-  text-align: center;
-  letter-spacing: 0.15vw;
-  font-weight: lighter;
-}
-
-#mfttitle {
-  position: absolute;
   top: 86vw;
-  left: 23%;
   margin: auto;
   text-align: center;
-  font-size: 1.1vw;
   z-index: 100;
 }
-
-#tbgtitle {
+#mfttitle {
   position: absolute;
-  top: 86vw;
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  font-size: 1.1vw;
+  left: 23vw;
 }
-
 #clienttitle {
   position: absolute;
-  top: 86vw;
-  left: 64.5%;
+  left: 64.5vw;
   font-style: italic;
-  font-size: 1.1vw;
 }
 
 
@@ -352,31 +267,25 @@ a:active {
   border: 1px solid black;
   border-width: thin;
   top: 88vw;
-  left: 22.5%;
+  left: 22.5vw;
   width: 15vw;
   border-radius: 10px;
 }
-
-
-
 #tbgscreen {
   position: absolute;
   border: 1px solid black;
   border-width: thin;
   top: 88vw;
-  left: 42.5%; 
+  left: 42.5vw;
   width: 15vw;
   border-radius: 10px;
 }
-
-
-
 #clientscreen {
   position: absolute;
   border: 1px solid black;
   border-width: thin;
   top: 88vw;
-  left: 63%;
+  left: 63vw;
   width: 15vw;
   border-radius: 10px;
 }
@@ -384,16 +293,17 @@ a:active {
 
 /* GET IN TOUCH */
 
-#inbox-message {
+
+#contact-message {
   letter-spacing: 0.1vw;
   font-weight: lighter;
-  font-size: 1.1vw;
   position: absolute;
-  top: 105vw;
+  top: 108vw;
   line-height: 1.8vw;
   width: 100%;
   text-align: center;
 }
+
 
 #button-30 {
   align-items: center;
