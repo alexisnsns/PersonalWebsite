@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
 <html>
-<div class="cursor"></div>
-<div class="cursor2"></div>
 <head>
   <style>
     html, body {
@@ -18,9 +16,11 @@
 </head>
 
 <body>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
 
   <div id="site-header" >
-  <%= image_tag "hands.png", id:"hands"%>
+  <img src="images/hands.png" alt="hands" id="hands">
     <h1 id="pagetitle"> <a href="#top"> Alexis NS </a> </h1>
     <div id="links">
       <a href="#top">About /</a>
@@ -30,13 +30,13 @@
     </div>
   </div>
 
-<%= image_tag "statue.gif", id:"statue" %>
+  <img src="images/statue.gif" alt="statue" id="statue" >
 
-<div class="container">
-  <div class="typed-out" id="title">
-     <h1> Hi! I'm Alexis. </h1>
+  <div class="container">
+    <div class="typed-out" id="title">
+      <h1> Hi! I'm Alexis. </h1>
+    </div>
   </div>
-</div>
 
   <div>
     <h1 id="introduction"> I am completing my training at
@@ -54,7 +54,7 @@
 
   <div id="stacktitle"> My stack <br> </div>
 
-  <%= image_tag "pinkarrow.png", id:"pinkarrowstack"%>
+  <img src="images/pinkarrow.png" alt="arrow" id="pinkarrowstack">
 
   <div id="frontstack">Frontend</div>
   <div id="backstack">Backend</div>
@@ -96,46 +96,139 @@
 <!-- MY PORTFOLIO -->
 
 
-<h1 id="portfoliotitle"> My portfolio </h1>
+  <h1 id="portfoliotitle"> My portfolio </h1>
 
-<a href="http://www.myfrenchtriathlon.com/" target="_blank">  <%= image_tag "MFT.png", id:"mftscreen"%> </a>
-<div id="mfttitle"> My French Triathlon <a href="https://github.com/alexisnsns/triathlonwebsite" target="_blank" class="fa fa-github" ></a> </div>
+  <a href="http://www.myfrenchtriathlon.com/" target="_blank">  <img src="images/MFT.png" id="mftscreen"> </a>
+  <div id="mfttitle"> My French Triathlon <a href="https://github.com/alexisnsns/triathlonwebsite" target="_blank" class="fa fa-github" ></a> </div>
 
-<a href="http://www.letsbuild.lol/" target="_blank">  <%= image_tag "TBG.png", id:"tbgscreen"%> </a>
-<div id="tbgtitle"> Tech Bro Generator <a href="https://github.com/alexisnsns/techbrogenerator" target="_blank" class="fa fa-github" ></a> </div>
+  <a href="http://www.letsbuild.lol/" target="_blank">  <img src="images/TBG.png" id="tbgscreen"> </a>
+  <div id="tbgtitle"> Tech Bro Generator <a href="https://github.com/alexisnsns/techbrogenerator" target="_blank" class="fa fa-github" ></a> </div>
 
-<a href="mailto:hello@alexisns.com" target="_blank">  <%= image_tag "client.png", id:"clientscreen"%> </a>
-<div id="clienttitle"> Your next project? </div>
+  <a href="mailto:hello@alexisns.com" target="_blank">  <img src="images/client.png" id="clientscreen"> </a>
+  <div id="clienttitle"> Your next project? </div>
 
 <!-- GET IN TOUCH -->
 
 
-<div id="inbox-message">
-  <p style="font-size: 2vw"> Get in touch </p>
-  <p  style="color:#f542d1" > My inbox is always open. <br> Whether you have a question or just want to say Hi, <br> I’ll try my best to get back to you! </p>
-</div>
+  <div id="inbox-message">
+    <p style="font-size: 2vw"> Get in touch </p>
+    <p  style="color:#f542d1" > My inbox is always open. <br> Whether you have a question or just want to say Hi, <br> I’ll try my best to get back to you! </p>
+  </div>
 
-<%= image_tag "pinkarrow.png", id:"pinkarrowtouch"%>
+  <img src="images/pinkarrow.png" alt="arrow" id="pinkarrowtouch">
 
-<a id="button-30" target="_blank" href="mailto:hello@alexisns.com" > Say Hello </a>
+  <a id="button-30" target="_blank" href="mailto:hello@alexisns.com" > Say Hello </a>
 
 
 <!-- FOOTER -->
 
-<div class="footer">
- <a href="mailto:hello@alexisns.com" target="_blank"> Contact /</a>
- <a target="_blank" href="https://www.givewell.org/"> Donate <br> <br> </a>
- <p style="font-size: 0.7vw" id="bottom">Built from scratch with 🤍 </p>
-</div>
+  <div class="footer">
+  <a href="mailto:hello@alexisns.com" target="_blank"> Contact /</a>
+  <a target="_blank" href="https://www.givewell.org/"> Donate <br> <br> </a>
+  <p style="font-size: 0.7vw" id="bottom">Built from scratch with 🤍 </p>
+  </div>
 
 <!-- LINES ON THE SIDE -->
 
-<a href="https://github.com/alexisnsns" target="_blank" id="github" class="fa fa-github" ></a>
-<a href="https://www.linkedin.com/in/alexisns/" target="_blank" id="linkedin" class="fa fa-linkedin-square" ></a>
-<a href="mailto:hello@alexisns.com" target="_blank" id="email"> hello@alexisns.com </a>
+  <a href="https://github.com/alexisnsns" target="_blank" id="github" class="fa fa-github" ></a>
+  <a href="https://www.linkedin.com/in/alexisns/" target="_blank" id="linkedin" class="fa fa-linkedin-square" ></a>
+  <a href="mailto:hello@alexisns.com" target="_blank" id="email"> hello@alexisns.com </a>
 
-<p id="v_line"> </p>
-<p id="v_line2"> </p>
-
+  <p id="v_line"> </p>
+  <p id="v_line2"> </p>
 </body>
 </html>
+
+
+<script>
+(function(){
+
+  var doc = document.documentElement;
+  var w = window;
+
+  var prevScroll = w.scrollY || doc.scrollTop;
+  var curScroll;
+  var direction = 0;
+  var prevDirection = 0;
+
+  var header = document.getElementById('site-header');
+
+  var checkScroll = function() {
+
+    /*
+    ** Find the direction of scroll
+    ** 0 - initial, 1 - up, 2 - down
+    */
+
+    curScroll = w.scrollY || doc.scrollTop;
+    if (curScroll > prevScroll) {
+      //scrolled up
+      direction = 2;
+    }
+    else if (curScroll < prevScroll) {
+      //scrolled down
+      direction = 1;
+    }
+
+    if (direction !== prevDirection) {
+      toggleHeader(direction, curScroll);
+    }
+
+    prevScroll = curScroll;
+  };
+
+  var toggleHeader = function(direction, curScroll) {
+    if (direction === 2 && curScroll > 52) {
+
+      //replace 52 with the height of your header in px
+
+      header.classList.add('hide');
+      prevDirection = direction;
+    }
+    else if (direction === 1) {
+      header.classList.remove('hide');
+      prevDirection = direction;
+    }
+  };
+
+  window.addEventListener('scroll', checkScroll);
+
+})();
+
+
+var cursor = document.querySelector('.cursor');
+var cursorinner = document.querySelector('.cursor2');
+var a = document.querySelectorAll('a');
+
+document.addEventListener('mousemove', function(e){
+var x = e.clientX;
+var y = e.clientY;
+cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+});
+
+document.addEventListener('mousemove', function(e){
+var x = e.clientX;
+var y = e.clientY;
+cursorinner.style.left = x + 'px';
+cursorinner.style.top = y + 'px';
+});
+
+document.addEventListener('mousedown', function(){
+cursor.classList.add('click');
+cursorinner.classList.add('cursorinnerhover')
+});
+
+document.addEventListener('mouseup', function(){
+cursor.classList.remove('click')
+cursorinner.classList.remove('cursorinnerhover')
+});
+
+a.forEach(item => {
+item.addEventListener('mouseover', () => {
+  cursor.classList.add('hover');
+});
+item.addEventListener('mouseleave', () => {
+  cursor.classList.remove('hover');
+});
+})
+</script>
