@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+<head>
+  <style>
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+
+<body>
+
+  <div id="site-header" >
+  <%= image_tag "hands.png", id:"hands"%>
+    <h1 id="pagetitle"> <a href="#top"> Alexis NS </a> </h1>
+    <div id="links">
+      <a href="#top">About /</a>
+      <a href="#stacktitle"> Stack /</a>
+      <a href="#portfoliotitle"> Portfolio /</a>
+      <a href="#bottom"> Contact </a>
+    </div>
+  </div>
+
+<%= image_tag "statue.gif", id:"statue" %>
+
+<div class="container">
+  <div class="typed-out" id="title">
+     <h1> Hi! I'm Alexis. </h1>
+  </div>
+</div>
+
+  <div>
+    <h1 id="introduction"> I am completing my training at
+      <a style="color:#f542d1" target="_blank" href='https://www.lewagon.com/web-development-course'> Le Wagon</a>,
+      <br> a web development school. <br>
+      <br> I have a passion for all things technology and design,
+      <br> from software engineering to UI/UX.
+      <br><br> In addition to this, I am also interested
+      <br> in endurance sports (triathlon) and entrepreneurship. </h1>
+  </div>
+
+
+
+  <!-- MY STACK -->
+
+  <div id="stacktitle"> My stack <br> </div>
+
+  <%= image_tag "pinkarrow.png", id:"pinkarrowstack"%>
+
+  <div id="frontstack">Frontend</div>
+  <div id="backstack">Backend</div>
+  <div id="framestack">Devops/Frameworks</div>
+
+
+  <div id="leftline"></div>
+  <div id="midline"></div>
+  <div id="rightline"></div>
+
+
+  <div class="icons">
+    <div class="fronties">
+      <i id="html" class="devicon-html5-plain"></i>
+      <i id="css" class="devicon-css3-plain"></i>
+      <i id="jsfront" class="devicon-javascript-plain"></i>
+    </div>
+
+    <div class="backies">
+      <i id="ruby" class="devicon-ruby-plain"></i>
+      <i id="jsback" class="devicon-javascript-plain"></i>
+      <i id="postgresql" class="devicon-postgresql-plain"></i>
+    </div>
+
+    <div class="framies">
+      <i id="aws"  class="devicon-amazonwebservices-original"></i>
+      <i id="heroku" class="devicon-heroku-plain"></i>
+      <i id="rails"  class="devicon-rails-plain"></i>
+    </div>
+</div>
+
+<div class="languages">
+      <p id="frontlanguages">Html<br>Css<br> Javascript</p>
+      <p id="backlanguages">Ruby <br> Javascript <br> Postgresql </p>
+      <nobr> <p id="frameworks"> AWS <br> Heroku <br> Rails </nobr> </p>
+</div>
+
+
+<!-- MY PORTFOLIO -->
+
+
+<h1 id="portfoliotitle"> My portfolio </h1>
+
+<a href="http://www.myfrenchtriathlon.com/" target="_blank">  <%= image_tag "MFT.png", id:"mftscreen"%> </a>
+<div id="mfttitle"> My French Triathlon <a href="https://github.com/alexisnsns/triathlonwebsite" target="_blank" class="fa fa-github" ></a> </div>
+
+<a href="http://www.letsbuild.lol/" target="_blank">  <%= image_tag "TBG.png", id:"tbgscreen"%> </a>
+<div id="tbgtitle"> Tech Bro Generator <a href="https://github.com/alexisnsns/techbrogenerator" target="_blank" class="fa fa-github" ></a> </div>
+
+<a href="mailto:hello@alexisns.com" target="_blank">  <%= image_tag "client.png", id:"clientscreen"%> </a>
+<div id="clienttitle"> Your next project? </div>
+
+<!-- GET IN TOUCH -->
+
+
+<div id="inbox-message">
+  <p style="font-size: 2vw"> Get in touch </p>
+  <p  style="color:#f542d1" > My inbox is always open. <br> Whether you have a question or just want to say Hi, <br> I’ll try my best to get back to you! </p>
+</div>
+
+<%= image_tag "pinkarrow.png", id:"pinkarrowtouch"%>
+
+<a id="button-30" target="_blank" href="mailto:hello@alexisns.com" > Say Hello </a>
+
+
+<!-- FOOTER -->
+
+<div class="footer">
+ <a href="mailto:hello@alexisns.com" target="_blank"> Contact /</a>
+ <a target="_blank" href="https://www.givewell.org/"> Donate <br> <br> </a>
+ <p style="font-size: 0.7vw" id="bottom">Built from scratch with 🤍 </p>
+</div>
+
+<!-- LINES ON THE SIDE -->
+
+<a href="https://github.com/alexisnsns" target="_blank" id="github" class="fa fa-github" ></a>
+<a href="https://www.linkedin.com/in/alexisns/" target="_blank" id="linkedin" class="fa fa-linkedin-square" ></a>
+<a href="mailto:hello@alexisns.com" target="_blank" id="email"> hello@alexisns.com </a>
+
+<p id="v_line"> </p>
+<p id="v_line2"> </p>
+
+</body>
+</html>
