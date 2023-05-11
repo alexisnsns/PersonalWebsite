@@ -1,24 +1,23 @@
+    <!-- standardize police -->
+    <!-- standardize pink hovers -->
+
+<!-- do cleaner cards for stack and PF -->
+    <!-- add JS pagescroll? -->
+
 <!DOCTYPE html>
 
 <html>
 <head>
-  <style>
-    html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="stylesheet" type="text/css" href="application.css" />
-</head>
-
-<body>
   <div class="cursor"></div>
   <div class="cursor2"></div>
 
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
   <div id="site-header" >
   <img src="images/hands.png" alt="hands logo" id="hands">
     <h1 id="pagetitle"> <a href="#top"> Alexis NS </a> </h1>
@@ -30,128 +29,125 @@
     </div>
   </div>
 
-  <img src="images/statue.gif" alt="gif of a statue" id="statue">
+  <!-- BOX INTRO -->
+  <div class="container-intro">
+    <img class="statue" alt="statue-gif" src="images/statue.gif" >
+    <div class="typewriter-intro"> Hi! I'm Alexis. </div>
+    <div class="introduction"> I am completing my training at <a style="color:#f542d1" target="_blank" href='https://www.lewagon.com/web-development-course'> Le Wagon</a>,<br> a web development school. <br> <br> I have a passion for all things technology and design, from software engineering to UI/UX. <br> <br>  In addition to this, I am also interested in endurance sports (triathlon) and entrepreneurship.</div>
+  </div>
 
-  <div class="container">
-    <div class="typed-out" id="typewriter-intro">
-      <h1> Hi! I'm Alexis. </h1>
+  <!-- BOX STACK -->
+  <div class="container-stack">
+    <div class="title" id="stack-title"> My stack </div>
+    <img src="images/pinkarrow.png" alt="arrow" id="pinkarrowstack">
+
+  <div class="container-stack-structure">
+    <h2> Front </h2>
+    <div class="container-card-stack">
+      <div class="language-icons">
+        <i class="devicon-html5-plain"></i>
+        <br>
+        <i class="devicon-css3-plain"></i>
+        <br>
+        <i class="devicon-javascript-plain"></i>
+      </div>
+      <div class="line"></div>
+      <div class="language-titles">
+        <p> Html</p>
+        <p> Css</p>
+        <p> Javascript</p>
+      </div>
     </div>
   </div>
 
-  <div id="introduction">
-      I am completing my training at
-      <a style="color:#f542d1" target="_blank" href='https://www.lewagon.com/web-development-course'> Le Wagon</a>,
-      <br> a web development school. <br>
-      <br> I have a passion for all things technology and design,
-      <br> from software engineering to UI/UX.
-      <br><br> In addition to this, I am also interested
-      <br> in endurance sports (triathlon) and entrepreneurship. </h1>
-  </div>
-
-
-
-  <!-- MY STACK -->
-
-  <div class="title" id="stack-title"> My stack <br> </div>
-  <img src="images/pinkarrow.png" alt="arrow" id="pinkarrowstack">
-
-
-    <!-- do in only one  -->
-  <div id="stack">Frontend Backend Devops/Frameworks</div>
-
-  <div class="line" id="left-line"></div>
-  <div class="line" id="mid-line"></div>
-  <div class="line" id="right-line"></div>
-
-  <div class="icons">
-
-    <div id="front-icons">
-      <i class="devicon-html5-plain"></i>
-      <i class="devicon-css3-plain"></i>
-      <i class="devicon-javascript-plain"></i>
-    </div>
-
-    <div id="back-icons">
-      <i class="devicon-ruby-plain"></i>
-      <i class="devicon-javascript-plain"></i>
-      <i class="devicon-postgresql-plain"></i>
-    </div>
-
-    <div id="framework-icons">
-      <i class="devicon-amazonwebservices-original"></i>
-      <i class="devicon-heroku-plain"></i>
-      <i class="devicon-rails-plain"></i>
+  <div class="container-stack-structure">
+    <h2> Back </h2>
+    <div class="container-card-stack">
+      <div class="language-icons">
+        <i class="devicon-ruby-plain"></i>
+        <br>
+        <i class="devicon-javascript-plain"></i>
+        <br>
+        <i class="devicon-postgresql-plain"></i>
+      </div>
+      <div class="line"></div>
+      <div class="language-titles">
+        <p> Ruby</p>
+        <p> Javascript</p>
+        <p> Postgresql</p>
+      </div>
     </div>
   </div>
 
+  <div class="container-stack-structure">
+    <h2> Frameworks </h2>
+    <div class="container-card-stack">
+      <div class="language-icons">
+        <i class="devicon-amazonwebservices-original"></i>
+        <br>
+        <i class="devicon-heroku-plain"></i>
+        <br>
+        <i class="devicon-rails-plain"></i>
+      </div>
+      <div class="line"></div>
+      <div class="language-titles">
+        <p> AWS</p>
+        <p> Heroku</p>
+        <p> Rails</p>
+      </div>
+    </div>
+  </div>
+  </div>
 
-<div class="languages">
-      <p id="front-languages">Html<br>Css<br> Javascript</p>
-      <p id="back-languages">Ruby <br> Javascript <br> Postgresql </p>
-      <nobr> <p id="frameworks"> AWS <br> Heroku <br> Rails </nobr> </p>
+<!-- BOX PF -->
+<div class="container-pf">
+  <div class="title" id="portfolio-title"> My portfolio </div>
+  <div class="container-card">
+    <a href="http://www.myfrenchtriathlon.com/" target="_blank"><img class="pf-image" src="images/MFT.png"> </a>
+      <div class="container-text">
+        <div class="pf-title">My French Triathlon</div>
+          <a class="fa fa-github" class="pf-gh" href="https://github.com/alexisnsns/triathlonwebsite" target="_blank"  ></a>
+      </div>
+    </div>
+    <div class="container-card">
+      <a href="http://www.letsbuild.lol/" target="_blank"><img class="pf-image" src="images/TBG.png"> </a>
+      <div class="container-text">
+        <div class="pf-title">Tech Bro Generator</div>
+        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexisnsns/techbrogenerator" target="_blank"  ></a>
+      </div>
+    </div>
+    <div class="container-card">
+      <a href="mailto:hello@alexisns.com" target="_blank"> <img class="pf-image" src="images/client.png" > </a>
+      <div class="container-text">
+        <div class="pf-title">Your next project?</div>
+      </div>
+    </div>
 </div>
 
-
-<!-- MY PORTFOLIO -->
-
-
-  <h1 class="title" id="portfolio-title"> My portfolio </h1>
-
-
-
-
-  <div class="portfolio">
-    <div id="mfttitle">  My French Triathlon </div>
-    <div id="clienttitle"> Your next project? </div>
-    <div id="tbgtitle"> Tech Bro Generator </div>
-  </div>
-
-
-  <a href="https://github.com/alexisnsns/triathlonwebsite" target="_blank" class="fa fa-github" ></a>
-
-  <a href="http://www.myfrenchtriathlon.com/" target="_blank">
-    <img src="images/MFT.png" id="mftscreen"> </a>
-    <a href="https://github.com/alexisnsns/triathlonwebsite" target="_blank" class="fa fa-github" ></a>
-
-
-  <a href="http://www.letsbuild.lol/" target="_blank"> <img src="images/TBG.png" id="tbgscreen"> </a>
-  <a href="https://github.com/alexisnsns/techbrogenerator" target="_blank" class="fa fa-github" ></a>
-  </div>
-
-  <a href="mailto:hello@alexisns.com" target="_blank">  <img src="images/client.png" id="clientscreen"> </a>
-
-
-<!-- GET IN TOUCH -->
-
-
-
+<!-- BOX CONTACT -->
+<div class="container-contact">
   <div class="title" id="contact-title"> Get in touch </div>
 
-  <div id="contact-message">
-    <p  style="color:#f542d1" > My inbox is always open. <br> Whether you have a question or just want to say Hi, <br> I’ll try my best to get back to you! </p>
+  <div id="contact-message">  My inbox is always open. <br> Whether you have a question or just want to say Hi, <br> I’ll try my best to get back to you! </p>
   </div>
-
   <img src="images/pinkarrow.png" alt="arrow" id="pinkarrowtouch">
-
   <a id="button-30" target="_blank" href="mailto:hello@alexisns.com" > Say Hello </a>
-
-
-<!-- FOOTER -->
-
-  <div class="footer">
-  <a href="mailto:hello@alexisns.com" target="_blank"> Contact /</a>
-  <a target="_blank" href="https://www.givewell.org/"> Donate <br> <br> </a>
-  <p style="font-size: 0.7vw" id="bottom">Built from scratch with 🤍 </p>
-  </div>
+</div>
 
 <!-- LINES ON THE SIDE -->
+<a href="https://github.com/alexisnsns" target="_blank" id="github" class="fa fa-github" ></a>
+<a href="https://www.linkedin.com/in/alexisns/" target="_blank" id="linkedin" class="fa fa-linkedin-square" ></a>
+<a href="mailto:hello@alexisns.com" target="_blank" id="email"> hello@alexisns.com </a>
 
-  <a href="https://github.com/alexisnsns" target="_blank" id="github" class="fa fa-github" ></a>
-  <a href="https://www.linkedin.com/in/alexisns/" target="_blank" id="linkedin" class="fa fa-linkedin-square" ></a>
-  <a href="mailto:hello@alexisns.com" target="_blank" id="email"> hello@alexisns.com </a>
+<p id="v_line"> </p>
+<p id="v_line2"> </p>
 
-  <p id="v_line"> </p>
-  <p id="v_line2"> </p>
+<!-- FOOTER -->
+  <div class="container-footer">
+    <a href="mailto:hello@alexisns.com" target="_blank"> Contact /</a>
+    <a target="_blank" href="https://www.givewell.org/"> Donate </a>
+    <p style="font-size: 0.7vw" id="bottom">Built from scratch with 🤍 </p>
+  </div>
 </body>
 </html>
 

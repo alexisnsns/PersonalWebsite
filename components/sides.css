@@ -1,0 +1,68 @@
+
+/* SIDE LINES PAGE */
+
+#github {
+  font-size: 1.5vw;
+  border: none;
+  text-decoration: none;
+  position: fixed;
+  left: 2.5vw;
+  bottom: 14%;
+}
+
+#linkedin {
+  font-size: 1.5vw;
+  border: none;
+  text-decoration: none;
+  position: fixed;
+  left: 2.5vw;
+  bottom: 10%;
+}
+
+#email {
+  letter-spacing: 0.3vw;
+  font-weight: normal;
+  color: white;
+  position: fixed;
+  padding: 0vw;
+  font-size: 1vw;
+  writing-mode: vertical-rl;
+  right: 2.5vw;
+  bottom: 10%;
+  z-index: 2;
+}
+
+email:hover {
+  font-size: 1.3vw;
+  text-decoration: line-through;
+  color: #f542d1;
+}
+
+email:link {
+  text-decoration: none;
+  color: white;
+  transition: all 500ms;
+
+}
+
+#v_line {
+  position: fixed;
+  border-left: 0.05vw solid white;
+  padding: 0vw;
+  height: 7%;
+  width: 0.1vw;
+  right: 3vw;
+  bottom: -1%;
+  z-index: 2;
+}
+
+#v_line2 {
+  position: fixed;
+  border-left: 0.05vw solid white;
+  padding: 0vw;
+  height: 7%;
+  width: 0.1vw;
+  left: 3vw;
+  z-index: 2;
+  bottom: -1%;
+}

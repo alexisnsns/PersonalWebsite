@@ -1,0 +1,52 @@
+#site-header {
+  position: fixed;
+  height: 10vh;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: all .5s ease;
+  box-shadow: 0 1px 25px rgba(0, 0, 0, .1);
+  /* border: 0.5px solid white; */
+}
+
+#site-header.hide {
+  top: -100px;
+}
+
+#links {
+  letter-spacing: 0.15vw;
+  position: absolute;
+  right: 3vw;
+  top: 1.6vw;
+  font-size: 1.2vw;
+  z-index: 2;
+}
+
+#links.hover {
+  text-decoration: line-through;
+  text-align: center;
+  text-decoration: line-through;
+  color: #f542d1;
+}
+
+#links.visited {
+  color: white;
+  text-decoration: none;
+}
+
+#hands {
+  position: absolute;
+  top: 1vw;
+  width: 3vw;
+  left: 1vw;
+}
+
+#pagetitle {
+  letter-spacing: 0.15vw;
+  font-weight: lighter;
+  font-size: 1.2vw;
+  position: absolute;
+  left: 5.1vw;
+  top: 1.3vw;
+  z-index: 1;
+}
