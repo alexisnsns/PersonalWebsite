@@ -12,7 +12,6 @@
   position: absolute;
   top: 9%;
   left: 75%;
-
   width: 23%;
   border-radius: 30%;
 }
@@ -30,8 +29,8 @@
   border-radius: 2px;
   white-space: nowrap;
   animation:
-  typing 1.5s steps(15, end) forwards,
-  blinking 1.5s infinite 20s;
+    typing 1.5s steps(15, end) forwards,
+    blinking 1.5s infinite 20s;
 }
 
 .introduction {
