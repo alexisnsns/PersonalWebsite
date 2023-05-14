@@ -6,7 +6,6 @@
   z-index: 1;
   transition: all .5s ease;
   box-shadow: 0 1px 25px rgba(0, 0, 0, .1);
-  /* border: 0.5px solid white; */
 }
 
 #site-header.hide {
@@ -14,24 +13,10 @@
 }
 
 #links {
-  letter-spacing: 0.15vw;
   position: absolute;
   right: 3vw;
   top: 1.6vw;
-  font-size: 1.2vw;
   z-index: 2;
-}
-
-#links.hover {
-  text-decoration: line-through;
-  text-align: center;
-  text-decoration: line-through;
-  color: #f542d1;
-}
-
-#links.visited {
-  color: white;
-  text-decoration: none;
 }
 
 #hands {
@@ -42,10 +27,9 @@
 }
 
 #pagetitle {
-  letter-spacing: 0.15vw;
   font-weight: lighter;
-  font-size: 1.2vw;
   position: absolute;
+  font-size: 1.1vw;
   left: 5.1vw;
   top: 1.3vw;
   z-index: 1;

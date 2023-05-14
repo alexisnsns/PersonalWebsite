@@ -10,10 +10,10 @@
 /* INTRODUCTION */
 .statue {
   position: absolute;
-  top: 27%;
-  left: 80%;
+  top: 9%;
+  left: 75%;
 
-  width: 18%;
+  width: 23%;
   border-radius: 30%;
 }
 
@@ -23,9 +23,8 @@
   left: 0%;
   width: 60%;
 
-  letter-spacing: 0.2vw;
   font-weight: bold;
-  font-size: 4vw;
+  font-size: 3vw;
   overflow: hidden;
   border-right: .20em solid white;
   border-radius: 2px;
@@ -40,7 +39,6 @@
   top: 40%;
   width: 70%;
 
-  letter-spacing: 0.1vw;
   font-weight: lighter;
   text-align: left;
 }

@@ -10,17 +10,14 @@
 #contact-message {
   margin-top: 10vh;
   font-weight: lighter;
-  line-height: 1.5vw;
   text-align: center;
-
 }
 
 
 #button-30 {
   margin-top: 5vh;
   align-items: center;
-  background-color: #FCFCFD;
-  color: black;
+  background-color: #968CE7;
   border-radius: 1vw;
   border-width: 0;
   box-sizing: border-box;
@@ -33,10 +30,13 @@
   text-align: center;
 }
 
-#pinkarrowtouch {
+
+
+
+#arrow-contact {
   position: absolute;
-  left: 41%;
-  top: 32%;
+  left: 44%;
+  top: 30%;
   width: 18vw;
   transform: scaleX(-1);
   z-index: -1;
