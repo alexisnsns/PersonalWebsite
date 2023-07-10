@@ -1,9 +1,7 @@
-<!-- do cleaner cards for stack and PF -->
-    <!-- add JS pagescroll? -->
-
 <!DOCTYPE html>
 
 <html>
+
 <head>
   <title> Alexis NS 🙌 </title>
   <link rel="stylesheet" type="text/css" href="application.css" />
@@ -15,13 +13,13 @@
 
 <body>
 
-    <!-- HEADER -->
-  <div id="site-header" >
-  <img src="images/hands.png" alt="hands logo" id="hands">
+  <!-- HEADER -->
+  <div id="site-header">
+    <img src="images/hands.png" alt="hands logo" id="hands">
     <h1 id="pagetitle"> <a href="#top"> Alexis NS </a> </h1>
     <div id="links">
       <a href="#top">About /</a>
-      <a href="#stacktitle"> Stack /</a>
+      <a href="#arrow-stack"> Stack /</a>
       <a href="#portfolio-title"> Portfolio /</a>
       <a href="#bottom"> Contact </a>
     </div>
@@ -29,10 +27,20 @@
 
   <!-- BOX INTRO -->
   <div class="container-intro">
-    <img class="statue" alt="statue-gif" src="images/statue.gif" >
+    <img class="statue" alt="statue-gif" src="images/statue.gif">
     <div class="typewriter-intro"> Hi! I'm Alexis. </div>
-    <div class="introduction"> I am completing my training at <a style="color:#968CE7" target="_blank" href='https://www.lewagon.com/web-development-course'> Le Wagon</a>,<br> a web development school. <br> <br> I have a passion for all things technology and design, from software engineering to UI/UX. <br> <br>  In addition to this, I am also interested in endurance sports (triathlon) and entrepreneurship.</div>
+    <div class="introduction"> I am a passionate Full-Stack Developer. <br> <br>
+      Before venturing into coding, I got my masters
+      degree at SciencesPo Paris, then worked in different startups and VCs between Paris, London and
+      SaoPaulo. To solidify this transition, I undertook an intense Full-Stack coding bootcamp at <a
+        style="color:#968CE7" target="_blank" href='https://www.lewagon.com/web-development-course'> Le Wagon</a>. <br>
+      <br> In
+      addition to
+      this, I am also interested in endurance sports (triathlon) and entrepreneurship.
+    </div>
   </div>
+
+
 
   <!-- BOX STACK -->
   <div class="container-stack">
@@ -52,14 +60,14 @@
         <div class="line"></div>
         <div class="language-titles">
           <p> Html</p>
-          <p> Css</p>
+          <p> Scss</p>
           <p> Javascript</p>
         </div>
       </div>
     </div>
 
     <div class="container-stack-structure">
-      <h2> Back </h2>
+      <h2> Back - DB </h2>
       <div class="container-card-stack">
         <div class="language-icons">
           <i class="devicon-ruby-plain"></i>
@@ -70,7 +78,7 @@
         </div>
         <div class="line"></div>
         <div class="language-titles">
-          <p> Ruby</p>
+          <p> Ruby/Rails</p>
           <p> Javascript</p>
           <p> Postgresql</p>
         </div>
@@ -78,168 +86,167 @@
     </div>
 
     <div class="container-stack-structure">
-      <h2> Frameworks </h2>
+      <h2> Hosting </h2>
       <div class="container-card-stack">
         <div class="language-icons">
-          <i class="devicon-amazonwebservices-original"></i>
-          <br>
           <i class="devicon-heroku-plain"></i>
           <br>
-          <i class="devicon-rails-plain"></i>
+          <i class="devicon-trello-plain"></i>
         </div>
         <div class="line"></div>
         <div class="language-titles">
-          <p> AWS</p>
-          <p> Heroku/Scalingo &nbsp  &nbsp</p>
-          <p> Rails</p>
+          <p> Heroku &nbsp &nbsp</p>
+          <p> Scalingo</p>
         </div>
       </div>
     </div>
 
   </div>
 
-<!-- BOX PF -->
-<div class="container-pf">
-  <div class="title" id="portfolio-title"> ... And some things <br> I've built with it </div>
-  <div class="container-card">
-    <a href="http://www.myfrenchtriathlon.com/" target="_blank"><img class="pf-image" src="images/MFT.png"> </a>
+  <!-- BOX PF -->
+  <div class="container-pf">
+    <div class="title" id="portfolio-title"> ... And some things <br> I've built with it </div>
+    <div class="container-card">
+      <a href="https://www.nexttriathlon.com/" target="_blank"><img class="pf-image" src="images/nexttriathlon.png"> </a>
       <div class="container-text">
-        <div class="pf-title">My French Triathlon</div>
-          <a class="fa fa-github" class="pf-gh" href="https://github.com/alexisnsns/triathlonwebsite" target="_blank"  ></a>
+        <div class="pf-title">Next Triathlon</div>
+        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexisnsns/triathlonwebsite" target="_blank"></a>
       </div>
     </div>
     <div class="container-card">
-      <a href="http://www.letsbuild.lol/" target="_blank"><img class="pf-image" src="images/TBG.png"> </a>
+      <a href="https://www.zenloop.app" target="_blank"><img class="pf-image" src="images/zenloop.png"> </a>
       <div class="container-text">
-        <div class="pf-title">Tech Bro Generator</div>
-        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexisnsns/techbrogenerator" target="_blank"  ></a>
+        <div class="pf-title">Zen <br> Loop</div>
+        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexberthon/zenloop" target="_blank"></a>
       </div>
     </div>
     <div class="container-card">
-      <a href="mailto:hello@alexisns.com" target="_blank"> <img class="pf-image" src="images/client.png" > </a>
+      <a href="mailto:hello@alexisns.com" target="_blank"> <img class="pf-image" src="images/client.png"> </a>
       <div class="container-text">
         <div class="pf-title">Your next project?</div>
       </div>
     </div>
-</div>
-
-<!-- BOX CONTACT -->
-<div class="container-contact">
-  <div class="title" id="contact-title"> Get in touch </div>
-
-  <div id="contact-message">  My inbox is always open. <br> Whether you have a question or just want to say Hi, <br> I’ll try my best to get back to you! </p>
   </div>
-  <img src="images/pinkarrow.png" alt="arrow" id="arrow-contact">
-  <a id="button-30" class="glow-on-hover" target="_blank" href="mailto:hello@alexisns.com" > Say Hello </a>
-</div>
 
-<!-- LINES ON THE SIDE -->
-<a href="https://github.com/alexisnsns" target="_blank" id="github" class="fa fa-github" ></a>
-<a href="https://www.linkedin.com/in/alexisns/" target="_blank" id="linkedin" class="fa fa-linkedin-square" ></a>
-<a href="mailto:hello@alexisns.com" target="_blank" id="email"> hello@alexisns.com </a>
+  <!-- BOX CONTACT -->
+  <div class="container-contact">
+    <div class="title" id="contact-title"> Get in touch </div>
 
-<p id="v_line"> </p>
-<p id="v_line2"> </p>
+    <div id="contact-message"> My inbox is always open. <br> Whether you have a question or just want to say Hi, <br>
+      I’ll try my best to get back to you! </p>
+    </div>
+    <img src="images/pinkarrow.png" alt="arrow" id="arrow-contact">
+    <a id="button-30" class="glow-on-hover" target="_blank" href="mailto:hello@alexisns.com"> Say Hello </a>
+  </div>
 
-<!-- FOOTER -->
+  <!-- LINES ON THE SIDE -->
+  <a href="https://github.com/alexisnsns" target="_blank" id="github" class="fa fa-github"></a>
+  <a href="https://www.linkedin.com/in/alexisns/" target="_blank" id="linkedin" class="fa fa-linkedin-square"></a>
+  <a href="mailto:hello@alexisns.com" target="_blank" id="email"> hello@alexisns.com </a>
+
+  <p id="v_line"> </p>
+  <p id="v_line2"> </p>
+
+  <!-- FOOTER -->
   <div class="container-footer">
     <a href="mailto:hello@alexisns.com" target="_blank"> Contact /</a>
     <a target="_blank" href="https://www.givewell.org/"> Donate </a>
     <p style="font-size: 0.7vw" id="bottom">Built from scratch with 🤍 </p>
   </div>
 </body>
+
 </html>
 
 
 <script>
-(function(){
+  (function () {
 
-  var doc = document.documentElement;
-  var w = window;
+    var doc = document.documentElement;
+    var w = window;
 
-  var prevScroll = w.scrollY || doc.scrollTop;
-  var curScroll;
-  var direction = 0;
-  var prevDirection = 0;
+    var prevScroll = w.scrollY || doc.scrollTop;
+    var curScroll;
+    var direction = 0;
+    var prevDirection = 0;
 
-  var header = document.getElementById('site-header');
+    var header = document.getElementById('site-header');
 
-  var checkScroll = function() {
+    var checkScroll = function () {
 
-    /*
-    ** Find the direction of scroll
-    ** 0 - initial, 1 - up, 2 - down
-    */
+      /*
+      ** Find the direction of scroll
+      ** 0 - initial, 1 - up, 2 - down
+      */
 
-    curScroll = w.scrollY || doc.scrollTop;
-    if (curScroll > prevScroll) {
-      //scrolled up
-      direction = 2;
-    }
-    else if (curScroll < prevScroll) {
-      //scrolled down
-      direction = 1;
-    }
+      curScroll = w.scrollY || doc.scrollTop;
+      if (curScroll > prevScroll) {
+        //scrolled up
+        direction = 2;
+      }
+      else if (curScroll < prevScroll) {
+        //scrolled down
+        direction = 1;
+      }
 
-    if (direction !== prevDirection) {
-      toggleHeader(direction, curScroll);
-    }
+      if (direction !== prevDirection) {
+        toggleHeader(direction, curScroll);
+      }
 
-    prevScroll = curScroll;
-  };
+      prevScroll = curScroll;
+    };
 
-  var toggleHeader = function(direction, curScroll) {
-    if (direction === 2 && curScroll > 52) {
+    var toggleHeader = function (direction, curScroll) {
+      if (direction === 2 && curScroll > 52) {
 
-      //replace 52 with the height of your header in px
+        //replace 52 with the height of your header in px
 
-      header.classList.add('hide');
-      prevDirection = direction;
-    }
-    else if (direction === 1) {
-      header.classList.remove('hide');
-      prevDirection = direction;
-    }
-  };
+        header.classList.add('hide');
+        prevDirection = direction;
+      }
+      else if (direction === 1) {
+        header.classList.remove('hide');
+        prevDirection = direction;
+      }
+    };
 
-  window.addEventListener('scroll', checkScroll);
+    window.addEventListener('scroll', checkScroll);
 
-})();
+  })();
 
 
-var cursor = document.querySelector('.cursor');
-var cursorinner = document.querySelector('.cursor2');
-var a = document.querySelectorAll('a');
+  var cursor = document.querySelector('.cursor');
+  var cursorinner = document.querySelector('.cursor2');
+  var a = document.querySelectorAll('a');
 
-document.addEventListener('mousemove', function(e){
-var x = e.clientX;
-var y = e.clientY;
-cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
-});
+  document.addEventListener('mousemove', function (e) {
+    var x = e.clientX;
+    var y = e.clientY;
+    cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+  });
 
-document.addEventListener('mousemove', function(e){
-var x = e.clientX;
-var y = e.clientY;
-cursorinner.style.left = x + 'px';
-cursorinner.style.top = y + 'px';
-});
+  document.addEventListener('mousemove', function (e) {
+    var x = e.clientX;
+    var y = e.clientY;
+    cursorinner.style.left = x + 'px';
+    cursorinner.style.top = y + 'px';
+  });
 
-document.addEventListener('mousedown', function(){
-cursor.classList.add('click');
-cursorinner.classList.add('cursorinnerhover')
-});
+  document.addEventListener('mousedown', function () {
+    cursor.classList.add('click');
+    cursorinner.classList.add('cursorinnerhover')
+  });
 
-document.addEventListener('mouseup', function(){
-cursor.classList.remove('click')
-cursorinner.classList.remove('cursorinnerhover')
-});
+  document.addEventListener('mouseup', function () {
+    cursor.classList.remove('click')
+    cursorinner.classList.remove('cursorinnerhover')
+  });
 
-a.forEach(item => {
-item.addEventListener('mouseover', () => {
-  cursor.classList.add('hover');
-});
-item.addEventListener('mouseleave', () => {
-  cursor.classList.remove('hover');
-});
-})
+  a.forEach(item => {
+    item.addEventListener('mouseover', () => {
+      cursor.classList.add('hover');
+    });
+    item.addEventListener('mouseleave', () => {
+      cursor.classList.remove('hover');
+    });
+  })
 </script>
