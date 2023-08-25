@@ -29,6 +29,17 @@
   text-align: center;
 }
 
+#button-30:hover {
+  background-color: white;
+  color: #968CE7;
+  border: 1px solid #968CE7;
+  text-decoration: none;
+
+}
+
+
+
+
 #arrow-contact {
   position: absolute;
   left: 44%;
