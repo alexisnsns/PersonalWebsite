@@ -1,3 +1,4 @@
+
 .container-contact {
   position: absolute;
   top: 170%;
@@ -16,7 +17,7 @@
 #button-30 {
   margin-top: 5vh;
   align-items: center;
-  background-color: #968CE7;
+  background-color: $purple;
   border-radius: 1vw;
   border-width: 0;
   box-sizing: border-box;
@@ -31,10 +32,14 @@
 
 #button-30:hover {
   background-color: white;
-  color: #968CE7;
-  border: 1px solid #968CE7;
+  color: $purple;
+  border: 1px solid $purple;
   text-decoration: none;
+
 }
+
+
+
 
 #arrow-contact {
   position: absolute;
@@ -43,4 +48,4 @@
   width: 18vw;
   transform: scaleX(-1);
   z-index: -1;
-}/*# sourceMappingURL=contact.css.map */
+}
