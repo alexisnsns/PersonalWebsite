@@ -31,7 +31,7 @@
     <div class="typewriter-intro"> Hi! I'm Alexis. </div>
     <div class="introduction"> I am a passionate Full-Stack Developer. <br> <br>
       Before venturing into coding, I got my masters
-      degree at SciencesPo Paris, then worked in different startups and VCs between Paris, London and
+      degree at SciencesPo Paris, then worked for different startups and VCs between Paris, London and
       SaoPaulo. To solidify this transition, I undertook an intense Full-Stack coding bootcamp at <a
         style="color:#968CE7" target="_blank" href='https://www.lewagon.com/web-development-course'> Le Wagon</a>. <br>
       <br> In
@@ -103,31 +103,73 @@
     </div>
 
   </div>
-
-  <!-- BOX PF -->
-  <div class="container-pf">
-    <div class="title" id="portfolio-title"> ... And some things <br> I've built with it </div>
-    <div class="container-card">
-      <a href="https://www.nexttriathlon.com/" target="_blank"><img class="pf-image" src="images/nexttriathlon.png"> </a>
-      <div class="container-text">
-        <div class="pf-title">Next Triathlon</div>
-        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexisnsns/triathlonwebsite" target="_blank"></a>
-      </div>
-    </div>
-    <div class="container-card">
-      <a href="https://www.zenloop.app" target="_blank"><img class="pf-image" src="images/zenloop.png"> </a>
-      <div class="container-text">
-        <div class="pf-title">Zen <br> Loop</div>
-        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexberthon/zenloop" target="_blank"></a>
-      </div>
-    </div>
-    <div class="container-card">
-      <a href="mailto:hello@alexisns.com" target="_blank"> <img class="pf-image" src="images/client.png"> </a>
-      <div class="container-text">
-        <div class="pf-title">Your next project?</div>
-      </div>
+  <!-- <div class="container-card">
+    <a href="https://www.nexttriathlon.com/" target="_blank"><img class="pf-image" src="images/nexttriathlon.png"> </a>
+    <div class="container-text">
+      <div class="pf-title">Next Triathlon</div>
+      <a class="fa fa-github" class="pf-gh" href="https://github.com/alexisnsns/triathlonwebsite" target="_blank"></a>
     </div>
   </div>
+  <div class="container-card">
+    <a href="https://www.zenloop.app" target="_blank"><img class="pf-image" src="images/zenloop.png"> </a>
+    <div class="container-text">
+      <div class="pf-title">Zen <br> Loop</div>
+      <a class="fa fa-github" class="pf-gh" href="https://github.com/alexberthon/zenloop" target="_blank"></a>
+    </div>
+  </div>
+  <div class="container-card">
+    <a href="mailto:hello@alexisns.com" target="_blank"> <img class="pf-image" src="images/client.png"> </a>
+    <div class="container-text">
+      <div class="pf-title">Your next project?</div>
+    </div>
+  </div>  -->
+
+
+  <!-- BOX PF -->
+
+  <div class="title" id="portfolio-title"> ... and some things I've built with it </div>
+
+  <section class="slider-wrapper">
+    <button class="slide-arrow" id="slide-arrow-prev">
+      &#8249;
+    </button>
+    <button class="slide-arrow" id="slide-arrow-next">
+      &#8250;
+    </button>
+
+    <ul class="slides-container" id="slides-container">
+      <li class="slide">
+
+      </li>
+      <li class="slide">
+        <div class="project-title">Next Triathlon</div>
+        <a href="https://www.nexttriathlon.com/" target="_blank"><img class="slider-img" src="images/nexttriathlon.png"> </a>
+        <p class="project-desc"> Built with Ruby, on Rails. Used Devise for authentication, Cloudinary for asset uploading, vanillaJS, PostGresQL for the DB. Hosted on Heroku.</p>
+        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexisnsns/triathlonwebsite" target="_blank"></a>
+      </li>
+      <li class="slide">
+        <div class="project-title">Zen Loop</div>
+        <a href="https://www.zenloop.app" target="_blank"><img class="slider-img" src="images/zenloop.png"> </a>
+        <p class="project-desc"> Built with Ruby, on Rails. Used Devise for authentication, Cloudinary for asset uploading, vanillaJS, PostGresQL for the DB. Hosted on Heroku.</p>
+        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexberthon/zenloop" target="_blank"></a>
+      </li>
+      <li class="slide">
+        <div class="project-title">Connectislice</div>
+        <a href="https://www.anotherproject.me" target="_blank"><img class="slider-img" src="images/zenloop.png"> </a>
+        <p class="project-desc"> Built with Python/Django. Used Django built-in authentication, Django admin, Cloudinary for asset uploading, Vue.JS, Mapbox, and PostGresQL for the DB. Hosted on Heroku.</p>
+        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexberthon/zenloop" target="_blank"></a>
+      </li>
+      <li class="slide">
+        <div class="project-title">Zen Loop</div>
+        <a href="https://www.zenloop.app" target="_blank"><img class="slider-img" src="images/zenloop.png"> </a>
+        <p class="project-desc"> Built with Ruby, on Rails. Used Devise for authentication, Cloudinary for asset uploading, vanillaJS, PostGresQL for the DB. Hosted on Heroku.</p>
+        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexberthon/zenloop" target="_blank"></a>
+      </li>
+    </ul>
+
+  </section>
+
+
 
   <!-- create simple horizontal carousel with links to projects and stack used described -->
 
@@ -156,11 +198,28 @@
     <a href="/tip.html"> Buy me a coffee </a>
     <p style="font-size: 0.7vw" id="bottom">Built from scratch with 🤍 </p>
   </div>
+
+
+  <script>
+    const slidesContainer = document.getElementById("slides-container");
+    const slide = document.querySelector(".slide");
+    const prevButton = document.getElementById("slide-arrow-prev");
+    const nextButton = document.getElementById("slide-arrow-next");
+
+    nextButton.addEventListener("click", () => {
+      const slideWidth = slide.clientWidth;
+      slidesContainer.scrollLeft += slideWidth;
+    });
+
+    prevButton.addEventListener("click", () => {
+      const slideWidth = slide.clientWidth;
+      slidesContainer.scrollLeft -= slideWidth;
+    });
+    </script>
+
 </body>
 
 </html>
-
-
 <script>
   (function () {
 

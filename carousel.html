@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="application.css" />
+
+</head>
+
+    <section class="slider-wrapper">
+      <button class="slide-arrow" id="slide-arrow-prev">
+        &#8249;
+      </button>
+      <button class="slide-arrow" id="slide-arrow-next">
+        &#8250;
+      </button>
+
+      <ul class="slides-container" id="slides-container">
+        <li class="slide">
+            <div class="pf-title">Next Triathlon</div>
+            <a class="fa fa-github" class="pf-gh" href="https://github.com/alexisnsns/triathlonwebsite" target="_blank"></a>
+          <a href="https://www.nexttriathlon.com/" target="_blank"><img class="slider-img" src="images/nexttriathlon.png"> </a>
+        </li>
+        <li class="slide"></li>
+        <li class="slide"></li>
+        <li class="slide"></li>
+      </ul>
+
+    </section>
+
+
+
+<script>
+  const slidesContainer = document.getElementById("slides-container");
+  const slide = document.querySelector(".slide");
+  const prevButton = document.getElementById("slide-arrow-prev");
+  const nextButton = document.getElementById("slide-arrow-next");
+
+  nextButton.addEventListener("click", () => {
+    const slideWidth = slide.clientWidth;
+    slidesContainer.scrollLeft += slideWidth;
+  });
+
+  prevButton.addEventListener("click", () => {
+    const slideWidth = slide.clientWidth;
+    slidesContainer.scrollLeft -= slideWidth;
+  });
+  </script>

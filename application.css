@@ -7,6 +7,7 @@
 @import "components/intro.css";
 @import "components/stack.css";
 @import "components/sides.css";
+
 body {
   cursor: url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
   font-family: "Courier New", Courier, monospace;
@@ -40,9 +41,10 @@ h2 {
 }
 
 #portfolio-title {
-  top: 3%;
+  top: 110%;
   line-height: 4vh;
   text-align: center;
+  left: 30%
 }
 
 #contact-title {
@@ -107,8 +109,8 @@ a:active {
   transition: all 200ms ease-out;
   position: fixed;
   pointer-events: none;
-  left: 400;
-  top: 400;
+  /* left: 400;
+  top: 400; */
   transform: translate(calc(-50% + 15px), -50%);
   z-index: 100;
 }
@@ -132,4 +134,10 @@ a:active {
   opacity: 0.5;
   z-index: 100;
   position: fixed;
-}/*# sourceMappingURL=application.css.map */
+}
+
+
+
+
+
+/*# sourceMappingURL=application.css.map */
