@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -7,13 +6,10 @@
   <link rel="stylesheet" type="text/css" href="application.css" />
   <div class="cursor"></div>
   <div class="cursor2"></div>
-
 </head>
-
-
 <body>
 
-  <!-- HEADER -->
+  <!-- NAVBAR -->
   <div id="site-header">
     <img src="images/hands.png" alt="hands logo" id="hands">
     <h1 id="pagetitle"> <a href="#top"> Alexis NS </a> </h1>
@@ -43,8 +39,8 @@
 
 
   <!-- BOX STACK -->
+  <div class="title" id="stack-title"> My preferred <br> stack... </div>
   <div class="container-stack">
-    <div class="title" id="stack-title"> My preferred <br> stack... </div>
     <img src="images/pinkarrow.png" alt="arrow" id="arrow-stack">
 
     <div class="container-stack-structure">
@@ -129,7 +125,7 @@
 
   <div class="title" id="portfolio-title"> ... and some things I've built with it </div>
 
-  <section class="slider-wrapper">
+  <section class="slider-container">
     <button class="slide-arrow" id="slide-arrow-prev">
       &#8249;
     </button>
@@ -139,7 +135,10 @@
 
     <ul class="slides-container" id="slides-container">
       <li class="slide">
-
+        <div class="project-title"> ApeWorx.io </div>
+        <a href="https://www.nexttriathlon.com/" target="_blank"><img class="slider-img" src="images/nexttriathlon.png"> </a>
+        <p class="project-desc"> The company I'm working for right now. </p>
+        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexisnsns/triathlonwebsite" target="_blank"></a>
       </li>
       <li class="slide">
         <div class="project-title">Next Triathlon</div>
@@ -171,12 +170,10 @@
 
 
 
-  <!-- create simple horizontal carousel with links to projects and stack used described -->
 
   <!-- BOX CONTACT -->
+  <div class="title" id="contact-title"> Get in touch </div>
   <div class="container-contact">
-    <div class="title" id="contact-title"> Get in touch </div>
-
     <div id="contact-message"> My inbox is always open. <br> Whether you have a question or just want to say Hi, <br>
       I’ll try my best to get back to you! </p>
     </div>

@@ -1,9 +1,15 @@
+/* #stack-title {
+  position: relative;
+  margin-top: 10%;
+  line-height: 4vh;
+} */
+
+
 .container-stack {
-  position: absolute;
-  top: 65%;
+  position: relative;
+  margin-top: 3%;
   width: 60%;
   left: 20%;
-  height: 50%;
   z-index: 10;
   display: flex;
   justify-content: space-evenly;
@@ -57,7 +63,7 @@
 #arrow-stack {
   position: absolute;
   left: 23%;
-  top: 3%;
+  bottom: 70%;
   width: 18vw;
   z-index: -1;
-}/*# sourceMappingURL=stack.css.map */
+}
