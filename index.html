@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 
 <head>
+  <meta charset="UTF-8">
   <title> Alexis NS 🙌 </title>
   <link rel="stylesheet" type="text/css" href="application.css" />
   <div class="cursor"></div>
@@ -36,8 +38,6 @@
     </div>
   </div>
 
-
-
   <!-- BOX STACK -->
   <div class="title" id="stack-title"> My preferred <br> stack... </div>
   <div class="container-stack">
@@ -45,7 +45,7 @@
 
     <div class="container-stack-structure">
       <h2> Front </h2>
-      <div class="container-card-stack">
+      <div class="card-stack">
         <div class="language-icons">
           <i class="devicon-css3-plain"></i>
           <br>
@@ -64,7 +64,7 @@
 
     <div class="container-stack-structure">
       <h2> Back </h2>
-      <div class="container-card-stack">
+      <div class="card-stack">
         <div class="language-icons">
           <i class="devicon-python-plain"></i>
           <br>
@@ -73,15 +73,15 @@
         </div>
         <div class="line"></div>
         <div class="language-titles">
-          <p> Python </p>
-          <p> Django </p>
+          <p>Python</p>
+          <p>Django</p>
         </div>
       </div>
     </div>
 
     <div class="container-stack-structure">
       <h2> Hosting / DB </h2>
-      <div class="container-card-stack">
+      <div class="card-stack">
         <div class="language-icons">
           <i class="devicon-heroku-plain"></i>
           <br>
@@ -91,35 +91,14 @@
         </div>
         <div class="line"></div>
         <div class="language-titles">
-          <p> Heroku &nbsp &nbsp</p>
-          <p> Scalingo</p>
-          <p> Postgresql</p>
+          <p>Heroku</p>
+          <p>Scalingo</p>
+          <p>Postgresql</p>
         </div>
       </div>
     </div>
 
   </div>
-  <!-- <div class="container-card">
-    <a href="https://www.nexttriathlon.com/" target="_blank"><img class="pf-image" src="images/nexttriathlon.png"> </a>
-    <div class="container-text">
-      <div class="pf-title">Next Triathlon</div>
-      <a class="fa fa-github" class="pf-gh" href="https://github.com/alexisnsns/triathlonwebsite" target="_blank"></a>
-    </div>
-  </div>
-  <div class="container-card">
-    <a href="https://www.zenloop.app" target="_blank"><img class="pf-image" src="images/zenloop.png"> </a>
-    <div class="container-text">
-      <div class="pf-title">Zen <br> Loop</div>
-      <a class="fa fa-github" class="pf-gh" href="https://github.com/alexberthon/zenloop" target="_blank"></a>
-    </div>
-  </div>
-  <div class="container-card">
-    <a href="mailto:hello@alexisns.com" target="_blank"> <img class="pf-image" src="images/client.png"> </a>
-    <div class="container-text">
-      <div class="pf-title">Your next project?</div>
-    </div>
-  </div>  -->
-
 
   <!-- BOX PF -->
 
@@ -138,37 +117,35 @@
         <div class="project-title"> ApeWorx.io </div>
         <a href="https://www.nexttriathlon.com/" target="_blank"><img class="slider-img" src="images/nexttriathlon.png"> </a>
         <p class="project-desc"> The company I'm working for right now. </p>
-        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexisnsns/triathlonwebsite" target="_blank"></a>
+        <a class="fa fa-github" id="pf-gh" href="https://github.com/alexisnsns/triathlonwebsite" target="_blank"></a>
       </li>
       <li class="slide">
         <div class="project-title">Next Triathlon</div>
         <a href="https://www.nexttriathlon.com/" target="_blank"><img class="slider-img" src="images/nexttriathlon.png"> </a>
         <p class="project-desc"> Built with Ruby, on Rails. Used Devise for authentication, Cloudinary for asset uploading, vanillaJS, PostGresQL for the DB. Hosted on Heroku.</p>
-        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexisnsns/triathlonwebsite" target="_blank"></a>
+        <a class="fa fa-github" id="pf-gh" href="https://github.com/alexisnsns/triathlonwebsite" target="_blank"></a>
       </li>
       <li class="slide">
         <div class="project-title">Zen Loop</div>
         <a href="https://www.zenloop.app" target="_blank"><img class="slider-img" src="images/zenloop.png"> </a>
         <p class="project-desc"> Built with Ruby, on Rails. Used Devise for authentication, Cloudinary for asset uploading, vanillaJS, PostGresQL for the DB. Hosted on Heroku.</p>
-        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexberthon/zenloop" target="_blank"></a>
+        <a class="fa fa-github" id="pf-gh" href="https://github.com/alexberthon/zenloop" target="_blank"></a>
       </li>
       <li class="slide">
         <div class="project-title">Connectislice</div>
         <a href="https://www.anotherproject.me" target="_blank"><img class="slider-img" src="images/zenloop.png"> </a>
         <p class="project-desc"> Built with Python/Django. Used Django built-in authentication, Django admin, Cloudinary for asset uploading, Vue.JS, Mapbox, and PostGresQL for the DB. Hosted on Heroku.</p>
-        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexberthon/zenloop" target="_blank"></a>
+        <a class="fa fa-github" id="pf-gh" href="https://github.com/alexberthon/zenloop" target="_blank"></a>
       </li>
       <li class="slide">
         <div class="project-title">Zen Loop</div>
         <a href="https://www.zenloop.app" target="_blank"><img class="slider-img" src="images/zenloop.png"> </a>
         <p class="project-desc"> Built with Ruby, on Rails. Used Devise for authentication, Cloudinary for asset uploading, vanillaJS, PostGresQL for the DB. Hosted on Heroku.</p>
-        <a class="fa fa-github" class="pf-gh" href="https://github.com/alexberthon/zenloop" target="_blank"></a>
+        <a class="fa fa-github" id="pf-gh" href="https://github.com/alexberthon/zenloop" target="_blank"></a>
       </li>
     </ul>
 
   </section>
-
-
 
 
   <!-- BOX CONTACT -->
@@ -182,12 +159,12 @@
   </div>
 
   <!-- LINES ON THE SIDE -->
-  <a href="https://github.com/alexisnsns" target="_blank" id="github" class="fa fa-github"></a>
-  <a href="https://www.linkedin.com/in/alexisns/" target="_blank" id="linkedin" class="fa fa-linkedin-square"></a>
+  <a href="https://github.com/alexisnsns" target="_blank" id="logo-github" class="fa fa-github side-logos"></a>
+  <a href="https://www.linkedin.com/in/alexisns/" target="_blank" id="logo-linkedin" class="fa fa-linkedin-square side-logos"></a>
   <a href="mailto:hello@alexisns.com" target="_blank" id="email"> hello@alexisns.com </a>
 
-  <p id="v_line"> </p>
-  <p id="v_line2"> </p>
+  <p class="vl" id="vl-left"> </p>
+  <p class="vl" id="vl-right"> </p>
 
   <!-- FOOTER -->
   <div class="container-footer">
@@ -196,6 +173,8 @@
     <p style="font-size: 0.7vw" id="bottom">Built from scratch with 🤍 </p>
   </div>
 
+</body>
+</html>
 
   <script>
     const slidesContainer = document.getElementById("slides-container");
@@ -212,100 +191,96 @@
       const slideWidth = slide.clientWidth;
       slidesContainer.scrollLeft -= slideWidth;
     });
-    </script>
+  </script>
+  <script>
+    (function () {
 
-</body>
+      var doc = document.documentElement;
+      var w = window;
 
-</html>
-<script>
-  (function () {
+      var prevScroll = w.scrollY || doc.scrollTop;
+      var curScroll;
+      var direction = 0;
+      var prevDirection = 0;
 
-    var doc = document.documentElement;
-    var w = window;
+      var header = document.getElementById('site-header');
 
-    var prevScroll = w.scrollY || doc.scrollTop;
-    var curScroll;
-    var direction = 0;
-    var prevDirection = 0;
+      var checkScroll = function () {
 
-    var header = document.getElementById('site-header');
+        /*
+        ** Find the direction of scroll
+        ** 0 - initial, 1 - up, 2 - down
+        */
 
-    var checkScroll = function () {
+        curScroll = w.scrollY || doc.scrollTop;
+        if (curScroll > prevScroll) {
+          //scrolled up
+          direction = 2;
+        }
+        else if (curScroll < prevScroll) {
+          //scrolled down
+          direction = 1;
+        }
 
-      /*
-      ** Find the direction of scroll
-      ** 0 - initial, 1 - up, 2 - down
-      */
+        if (direction !== prevDirection) {
+          toggleHeader(direction, curScroll);
+        }
 
-      curScroll = w.scrollY || doc.scrollTop;
-      if (curScroll > prevScroll) {
-        //scrolled up
-        direction = 2;
-      }
-      else if (curScroll < prevScroll) {
-        //scrolled down
-        direction = 1;
-      }
+        prevScroll = curScroll;
+      };
 
-      if (direction !== prevDirection) {
-        toggleHeader(direction, curScroll);
-      }
+      var toggleHeader = function (direction, curScroll) {
+        if (direction === 2 && curScroll > 52) {
 
-      prevScroll = curScroll;
-    };
+          //replace 52 with the height of your header in px
 
-    var toggleHeader = function (direction, curScroll) {
-      if (direction === 2 && curScroll > 52) {
+          header.classList.add('hide');
+          prevDirection = direction;
+        }
+        else if (direction === 1) {
+          header.classList.remove('hide');
+          prevDirection = direction;
+        }
+      };
 
-        //replace 52 with the height of your header in px
+      window.addEventListener('scroll', checkScroll);
 
-        header.classList.add('hide');
-        prevDirection = direction;
-      }
-      else if (direction === 1) {
-        header.classList.remove('hide');
-        prevDirection = direction;
-      }
-    };
-
-    window.addEventListener('scroll', checkScroll);
-
-  })();
+    })();
 
 
-  var cursor = document.querySelector('.cursor');
-  var cursorinner = document.querySelector('.cursor2');
-  var a = document.querySelectorAll('a');
+    var cursor = document.querySelector('.cursor');
+    var cursorinner = document.querySelector('.cursor2');
+    var a = document.querySelectorAll('a');
 
-  document.addEventListener('mousemove', function (e) {
-    var x = e.clientX;
-    var y = e.clientY;
-    cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
-  });
-
-  document.addEventListener('mousemove', function (e) {
-    var x = e.clientX;
-    var y = e.clientY;
-    cursorinner.style.left = x + 'px';
-    cursorinner.style.top = y + 'px';
-  });
-
-  document.addEventListener('mousedown', function () {
-    cursor.classList.add('click');
-    cursorinner.classList.add('cursorinnerhover')
-  });
-
-  document.addEventListener('mouseup', function () {
-    cursor.classList.remove('click')
-    cursorinner.classList.remove('cursorinnerhover')
-  });
-
-  a.forEach(item => {
-    item.addEventListener('mouseover', () => {
-      cursor.classList.add('hover');
+    document.addEventListener('mousemove', function (e) {
+      var x = e.clientX;
+      var y = e.clientY;
+      cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
     });
-    item.addEventListener('mouseleave', () => {
-      cursor.classList.remove('hover');
+
+    document.addEventListener('mousemove', function (e) {
+      var x = e.clientX;
+      var y = e.clientY;
+      cursorinner.style.left = x + 'px';
+      cursorinner.style.top = y + 'px';
     });
-  })
-</script>
+
+    document.addEventListener('mousedown', function () {
+      cursor.classList.add('click');
+      cursorinner.classList.add('cursorinnerhover')
+    });
+
+    document.addEventListener('mouseup', function () {
+      cursor.classList.remove('click')
+      cursorinner.classList.remove('cursorinnerhover')
+    });
+
+    a.forEach(item => {
+      item.addEventListener('mouseover', () => {
+        cursor.classList.add('hover');
+      });
+      item.addEventListener('mouseleave', () => {
+        cursor.classList.remove('hover');
+      });
+    })
+  </script>

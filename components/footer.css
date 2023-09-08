@@ -1,6 +1,8 @@
 .container-footer {
   position: relative;
   margin-top: 10%;
+  /* width: 60%;
+  left: 20%; */
   height: 5%;
   padding-top: 5%;
   font-weight: lighter;
@@ -9,6 +11,6 @@
 }
 
 #bottom {
-  margin-top: 3vh;
-  margin-bottom: 2vh;
+  margin-top: 3em;
+  margin-bottom: 2em;
 }

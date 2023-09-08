@@ -1,9 +1,3 @@
-/* #stack-title {
-  position: relative;
-  margin-top: 10%;
-  line-height: 4vh;
-} */
-
 
 .container-stack {
   position: relative;
@@ -16,11 +10,17 @@
   flex-direction: row;
   align-items: center;
 }
+.container-stack-structure {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
-.container-card-stack {
+.card-stack {
   text-align: center;
   width: 12vw;
-  height: 20vh;
+  height: 10em;
   box-shadow: 12px 12px 2px 1px #49CEDE;
   background-color: #968CE7;
   opacity: 0.7;
@@ -32,15 +32,8 @@
   align-items: center;
 }
 
-.container-card-stack:hover {
+.card-stack:hover {
   opacity: 1;
-}
-
-.container-stack-structure {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
 
 .language-icons {
