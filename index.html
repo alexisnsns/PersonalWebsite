@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Alexis NS 🙌</title>
+    <title>Alexis NS</title>
+    <meta
+      name="description"
+      content="Personal website of Alexis NS, web developer."
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="application.css" />
     <div class="cursor"></div>
     <div class="cursor2"></div>
@@ -11,11 +16,12 @@
     <!-- NAVBAR -->
     <div id="site-header">
       <img src="images/hands.png" alt="hands logo" id="hands" />
-      <h1 id="pagetitle"><a href="#top"> Alexis NS </a></h1>
+      <h1 id="pagetitle"><a href="#top" class="link-deco"> Alexis NS </a></h1>
       <div id="links">
-        <a href="#top">About</a>/ <a href="#arrow-stack"> Stack</a>/
-        <a href="#portfolio-title"> Portfolio</a>/
-        <a href="#bottom"> Contact </a>
+        <a href="#top" class="link-deco">About</a>/
+        <a href="#arrow-stack" class="link-deco"> Stack</a>/
+        <a href="#portfolio-title" class="link-deco"> Portfolio</a>/
+        <a href="#bottom" class="link-deco"> Contact </a>
       </div>
     </div>
 
@@ -48,9 +54,9 @@
       My preferred <br />
       stack...
     </div>
+
     <div class="container-stack">
       <img src="images/pinkarrow.png" alt="arrow" id="arrow-stack" />
-
       <div class="container-stack-structure">
         <h2>Front</h2>
         <div class="card-stack">
@@ -69,6 +75,7 @@
           </div>
         </div>
       </div>
+
       <div class="container-stack-structure">
         <h2>Back</h2>
         <div class="card-stack">
@@ -148,7 +155,8 @@
           ></a>
         </li>
         <li class="slide">
-          <div class="project-title">Zen Loop</div>
+          
+          <div class="project-title">ZenLoop.app</div>
           <a href="https://www.zenloop.app" target="_blank"
             ><img class="slider-img" src="images/zenloop.png" />
           </a>
@@ -166,8 +174,8 @@
         </li>
         <li class="slide">
           <div class="project-title">Connectislice</div>
-          <a href="https://www.anotherproject.me" target="_blank"
-            ><img class="slider-img" src="images/zenloop.png" />
+          <a href="https://www.anotherproject.me" target="_blank">
+            <img class="slider-img" src="images/zenloop.png" />
           </a>
           <p class="project-desc">
             Built with Python/Django. Used Django built-in authentication,
@@ -183,8 +191,8 @@
         </li>
         <li class="slide">
           <div class="project-title">Zen Loop</div>
-          <a href="https://www.zenloop.app" target="_blank"
-            ><img class="slider-img" src="images/zenloop.png" />
+          <a href="https://www.zenloop.app" target="_blank">
+            <img class="slider-img" src="images/zenloop.png" />
           </a>
           <p class="project-desc">
             Built with Ruby, on Rails. Used Devise for authentication,
@@ -241,8 +249,11 @@
 
     <!-- FOOTER -->
     <div class="container-footer">
-      <a href="mailto:hello@alexisns.com" target="_blank"> Contact</a> /
-      <a href="/tip.html"> Buy me a coffee </a>
+      <a href="mailto:hello@alexisns.com" target="_blank" class="link-deco">
+        Contact</a
+      >
+      /
+      <a href="/tip.html" class="link-deco"> Buy me a coffee </a>
       <p style="font-size: 0.7vw" id="bottom">Built from scratch with 🤍</p>
     </div>
   </body>
@@ -264,6 +275,7 @@
     slidesContainer.scrollLeft -= slideWidth;
   });
 </script>
+
 <script>
   (function () {
     var doc = document.documentElement;

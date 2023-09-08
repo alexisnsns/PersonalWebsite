@@ -9,7 +9,6 @@
 @import "components/sides.css";
 @import "components/tip.css";
 
-
 body {
   cursor: url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
   font-family: "Courier New", Courier, monospace;
@@ -38,7 +37,6 @@ h2 {
   line-height: 1.5em;
 }
 
-
 /* HOVERING */
 a {
   text-decoration: none;
@@ -55,9 +53,9 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
+.link-deco:hover {
   text-decoration: line-through;
-  color: #49CEDE;
+  color: #49cede;
   font-size: 1.15vw;
 }
 
@@ -83,8 +81,8 @@ a:active {
   transition: all 200ms ease-out;
   position: fixed;
   pointer-events: none;
-  left: 400;
-  top: 400;
+  left: 0px;
+  top: 0px;
   transform: translate(calc(-50% + 15px), -50%);
   z-index: 100;
 }
