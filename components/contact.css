@@ -12,8 +12,8 @@
   text-align: center;
 }
 
-#button-30 {
-  margin-top: 5vh;
+#button-contact {
+  margin-top: 4em;
   align-items: center;
   background-color: #968CE7;
   border-radius: 1vw;
@@ -26,7 +26,7 @@
   text-align: center;
 }
 
-#button-30:hover {
+#button-contact:hover {
   background-color: white;
   color: #968CE7;
   border: 1px solid #968CE7;
