@@ -19,6 +19,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  overflow: hidden;
 }
 
 .slide-arrow {
@@ -82,20 +83,30 @@
   z-index: 1000;
 }
 
+.slider-img:hover {
+  border: 1px solid #968ce7;
+}
+
 .project-title {
   font-size: 24px;
+  font-weight: bold;
   position: relative;
   padding-top: 5%;
   margin-bottom: 1em;
 }
 
+.project-title:hover {
+  color: #968ce7;
+}
+
 .project-desc {
   position: relative;
   margin-right: 5%;
-  margin-left: 46%;
+  margin-left: 50%;
   z-index: -100;
 }
 
 #pf-gh:hover {
-  text-decoration: none !important;
+  color: #968ce7;
+  font-size: larger;
 }
