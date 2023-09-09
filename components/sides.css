@@ -1,49 +1,58 @@
 /* SIDE LINES PAGE */
-#github {
+
+
+.side-logos {
   border: none;
   text-decoration: none;
   position: fixed;
-  font-size: 1.3vw;
-  left: 2.5vw;
-  bottom: 14%;
+  font-size: 1.3em;
+  transition: none;
+  z-index: 100;
 }
 
-#linkedin {
-  border: none;
+#logo-github {
+  left: 2.2em;
+  bottom: 4em;
+}
+
+#logo-linkedin {
+  left: 2.2em;
+  bottom: 5em;
+  margin-bottom: 0.5em;
+}
+
+.side-logos:hover {
+  color: #968CE7;
+  font-size: 1.3em;
   text-decoration: none;
-  position: fixed;
-  left: 2.5vw;
-  bottom: 10%;
-  font-size: 1.3vw;
 }
 
 #email {
   position: fixed;
-  padding: 0vw;
   writing-mode: vertical-rl;
-  right: 2.5vw;
-  bottom: 10%;
-  z-index: 10;
+  right: 2.75em;
+  bottom: 5em;
 }
 
-#v_line {
+#email:hover {
+  color: #968CE7;
+  text-decoration: none;
+  font-size: 1.1vw;
+}
+
+.vl {
   position: fixed;
   border-left: 0.05vw solid white;
   padding: 0vw;
-  height: 7%;
-  width: 0.1vw;
-  right: 3vw;
+  height: 4em;
+  width: 0.1em;
   bottom: -1%;
-  z-index: 2;
 }
 
-#v_line2 {
-  position: fixed;
-  border-left: 0.05vw solid white;
-  padding: 0vw;
-  height: 7%;
-  width: 0.1vw;
-  left: 3vw;
-  z-index: 2;
-  bottom: -1%;
-}/*# sourceMappingURL=sides.css.map */
+#vl-left {
+  right: 3.3em;
+}
+
+#vl-right {
+  left: 3.3em;
+}

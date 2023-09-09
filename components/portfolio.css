@@ -1,57 +1,112 @@
-.container-pf {
-  position: absolute;
-  top: 120%;
+/* SLIDER */
+.slider-container {
+  position: relative;
+  margin-top: 4em;
+  overflow: hidden;
   width: 60%;
   left: 20%;
-  height: 50%;
-  z-index: 10;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  border-radius: 5px;
+  z-index: 1000;
+  border: 0.5px solid #968ce7;
 }
 
-.container-card {
+.slides-container {
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  width: 12vw;
-  height: 20vh;
-  box-shadow: 12px 12px 2px 1px #968CE7;
-  background-color: #49CEDE;
-  opacity: 0.8;
-  transition: 300ms;
-  border-radius: 5%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 10px;
-  padding-bottom: 10px;
+  overflow: hidden;
 }
 
-.container-card:hover {
+.slide-arrow {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 4rem;
+  background-color: #49cede;
+  border: none;
+  width: 2rem;
+  font-size: 3rem;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 100ms;
+}
+
+.slide-arrow:hover,
+.slide-arrow:focus {
   opacity: 1;
 }
 
-.fa-github {
-  font-size: 1.3vw;
+#slide-arrow-prev {
+  left: 0;
+  padding-left: 0.25rem;
+  border-radius: 0 5px 5px 0;
 }
 
-.fa-github:hover {
-  color: #968CE7;
-  font-size: 1.3vw;
+#slide-arrow-next {
+  right: 0;
+  padding-left: 0.75rem;
+  border-radius: 5px 0 0 5px;
 }
 
-.container-text {
-  width: 70%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.slide {
+  flex: 1 0 100%;
 }
 
-.pf-image {
-  margin-top: -8.2%;
-  width: 100%;
-  border-radius: 5%;
-  filter: brightness(80%);
-}/*# sourceMappingURL=portfolio.css.map */
+.slide:nth-child(1) {
+}
+
+.slide:nth-child(2) {
+}
+
+.slide:nth-child(3) {
+}
+
+.slide:nth-child(4) {
+}
+
+/* INSIDE OF CAROUSEL PAGE */
+.slider-img {
+  width: 40%;
+  float: left;
+  left: 0px;
+  margin-bottom: 3.5em;
+  margin-left: 3.5em;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.slider-img:hover {
+  border: 1px solid #968ce7;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  padding-top: 5%;
+  margin-bottom: 1em;
+}
+
+.project-title:hover {
+  color: #968ce7;
+}
+
+.project-desc {
+  position: relative;
+  margin-right: 5%;
+  margin-left: 50%;
+  z-index: -100;
+}
+
+#pf-gh:hover {
+  color: #968ce7;
+  font-size: larger;
+}

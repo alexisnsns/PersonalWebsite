@@ -1,6 +1,6 @@
 .container-contact {
-  position: absolute;
-  top: 170%;
+  position: relative;
+  margin-top: 3%;
   width: 60%;
   left: 20%;
   height: 50%;
@@ -8,7 +8,6 @@
 }
 
 #contact-message {
-  margin-top: 10vh;
   font-weight: lighter;
   text-align: center;
 }
@@ -22,8 +21,6 @@
   box-sizing: border-box;
   display: inline-flex;
   height: 3vw;
-  line-height: 1;
-  overflow: hidden;
   padding-left: 1vw;
   padding-right: 1vw;
   text-align: center;
@@ -38,9 +35,9 @@
 
 #arrow-contact {
   position: absolute;
-  left: 44%;
-  top: 30%;
+  left: 43%;
+  top: 25%;
   width: 18vw;
   transform: scaleX(-1);
   z-index: -1;
-}/*# sourceMappingURL=contact.css.map */
+}
