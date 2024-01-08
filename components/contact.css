@@ -15,7 +15,7 @@
 #button-contact {
   margin-top: 4em;
   align-items: center;
-  background-color: #968CE7;
+  background-color: #968ce7;
   border-radius: 1vw;
   border-width: 0;
   box-sizing: border-box;
@@ -28,8 +28,8 @@
 
 #button-contact:hover {
   background-color: white;
-  color: #968CE7;
-  border: 1px solid #968CE7;
+  color: #968ce7;
+  border: 1px solid #968ce7;
   text-decoration: none;
 }
 
@@ -40,4 +40,37 @@
   width: 18vw;
   transform: scaleX(-1);
   z-index: -1;
+}
+
+/* For tablets or smaller desktops */
+@media (max-width: 1024px) {
+  .container-contact {
+    width: 70%; /* Slightly larger than on bigger screens */
+    left: 15%; /* Adjust the position accordingly */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .container-contact {
+    width: 80%; /* Even larger for mobile devices */
+    left: 10%; /* Center it more */
+    margin-top: 5%; /* You can also reduce the top margin if needed */
+  }
+
+  #arrow-contact {
+    visibility: hidden;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .container-contact {
+    width: 90%; /* Almost full width */
+    left: 5%; /* Center it as much as possible */
+    margin-top: 5%;
+  }
+  #arrow-contact {
+    visibility: hidden;
+  }
 }

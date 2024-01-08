@@ -1,4 +1,3 @@
-
 .container-stack {
   position: relative;
   margin-top: 3%;
@@ -21,8 +20,8 @@
   text-align: center;
   width: 12vw;
   height: 10em;
-  box-shadow: 12px 12px 2px 1px #49CEDE;
-  background-color: #968CE7;
+  box-shadow: 12px 12px 2px 1px #49cede;
+  background-color: #968ce7;
   opacity: 0.7;
   transition: 300ms;
   border-radius: 5%;
@@ -46,7 +45,7 @@
 }
 
 .line {
-  border-left: 0.1vw solid #49CEDE;
+  border-left: 0.1vw solid #49cede;
   height: 50%;
   width: 0.05vw;
   top: 30vw;
@@ -59,4 +58,36 @@
   bottom: 70%;
   width: 18vw;
   z-index: -1;
+}
+
+/* For tablets or smaller desktops */
+@media (max-width: 1024px) {
+  .container-stack {
+    width: 70%; /* Slightly larger than on bigger screens */
+    left: 15%; /* Adjust the position accordingly */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .container-stack {
+    width: 80%; /* Even larger for mobile devices */
+    left: 10%; /* Center it more */
+    margin-top: 5%; /* You can also reduce the top margin if needed */
+  }
+  #arrow-stack {
+    visibility: hidden;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .container-stack {
+    width: 90%; /* Almost full width */
+    left: 5%; /* Center it as much as possible */
+    margin-top: 5%;
+  }
+  #arrow-stack {
+    visibility: hidden;
+  }
 }

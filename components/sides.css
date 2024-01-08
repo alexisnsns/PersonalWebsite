@@ -1,6 +1,5 @@
 /* SIDE LINES PAGE */
 
-
 .side-logos {
   border: none;
   text-decoration: none;
@@ -22,7 +21,7 @@
 }
 
 .side-logos:hover {
-  color: #968CE7;
+  color: #968ce7;
   font-size: 1.3em;
   text-decoration: none;
 }
@@ -35,7 +34,7 @@
 }
 
 #email:hover {
-  color: #968CE7;
+  color: #968ce7;
   text-decoration: none;
   font-size: 1.1vw;
 }
@@ -55,4 +54,10 @@
 
 #vl-right {
   left: 3.3em;
+}
+
+@media (max-width: 768px) {
+  .line-side {
+    visibility: hidden;
+  }
 }
