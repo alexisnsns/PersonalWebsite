@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Alexis NS</title>
+    <title>Alex N</title>
     <meta
       name="description"
       content="Personal website of Alexis NS, web developer."
@@ -16,7 +16,7 @@
     <!-- NAVBAR -->
     <div id="site-header">
       <img src="images/hands.png" alt="hands logo" id="hands" />
-      <h1 id="pagetitle"><a href="#top" class="link-deco"> Alexis NS </a></h1>
+      <h1 id="pagetitle"><a href="#top" class="link-deco"> Alex N </a></h1>
       <div id="links">
         <a href="#top" class="link-deco">About</a>/
         <a href="#arrow-stack" class="link-deco"> Stack</a>/
@@ -30,7 +30,7 @@
       <a href="https://github.com/alexisnsns" target="_blank">
         <img class="statue" alt="statue-gif" src="images/statue.gif" />
       </a>
-      <div class="typewriter-intro">Hi! I'm Alexis.</div>
+      <div class="typewriter-intro">Hi! I'm Alex.</div>
       <div class="introduction">
         I am a passionate Full-Stack Developer. <br />
         <br />
@@ -277,6 +277,7 @@
   </body>
 </html>
 
+<!-- ARROWS PF CAROUSEL -->
 <script>
   const slidesContainer = document.getElementById("slides-container");
   const slide = document.querySelector(".slide");
@@ -294,6 +295,7 @@
   });
 </script>
 
+<!-- HEADER DISAPPEARS -->
 <script>
   (function () {
     var doc = document.documentElement;
@@ -342,24 +344,29 @@
 
     window.addEventListener("scroll", checkScroll);
   })();
+</script>
 
+<!-- CUSTOM CURSOR -->
+<script>
   var cursor = document.querySelector(".cursor");
   var cursorinner = document.querySelector(".cursor2");
   var a = document.querySelectorAll("a");
 
+  var cursorVisible = false;
+
+  // Mousemove event listener to update cursor position instantly
   document.addEventListener("mousemove", function (e) {
-    var x = e.clientX;
-    var y = e.clientY;
+    if (!cursorVisible) {
+      cursor.style.visibility = "visible";
+      cursorinner.style.visibility = "visible";
+      cursorVisible = true;
+    }
     cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
+    cursorinner.style.left = e.clientX + "px";
+    cursorinner.style.top = e.clientY + "px";
   });
 
-  document.addEventListener("mousemove", function (e) {
-    var x = e.clientX;
-    var y = e.clientY;
-    cursorinner.style.left = x + "px";
-    cursorinner.style.top = y + "px";
-  });
-
+  // Event listeners for mousedown, mouseup, and anchor hover
   document.addEventListener("mousedown", function () {
     cursor.classList.add("click");
     cursorinner.classList.add("cursorinnerhover");
