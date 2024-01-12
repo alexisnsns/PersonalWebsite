@@ -11,5 +11,6 @@
 #bottom {
   margin-top: 3em;
   margin-bottom: 2em;
-  font-size: 0.7vw;
+  font-size: 10px;
+  line-height: 16px;
 }

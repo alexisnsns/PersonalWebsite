@@ -1,5 +1,5 @@
 This is my personal website.
 
-Link is alexisns.com
+Link is alexn.me
 
-Don't hesitate to send your suggestions to hello@alexisns.com.
+Feel free to take whatever you want from the code.

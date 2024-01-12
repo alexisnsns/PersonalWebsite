@@ -20,23 +20,17 @@
   margin-bottom: 0.5em;
 }
 
-.side-logos:hover {
-  color: #968ce7;
-  font-size: 1.3em;
-  text-decoration: none;
-}
-
 #email {
   position: fixed;
   writing-mode: vertical-rl;
   right: 2.75em;
   bottom: 5em;
 }
-
+.side-logos:hover,
 #email:hover {
   color: #968ce7;
+  transition: 1s;
   text-decoration: none;
-  font-size: 1.1vw;
 }
 
 .vl {

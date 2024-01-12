@@ -16,14 +16,16 @@
   margin-top: 4em;
   align-items: center;
   background-color: #968ce7;
-  border-radius: 1vw;
+  border-radius: 25px;
   border-width: 0;
   box-sizing: border-box;
   display: inline-flex;
-  height: 3vw;
-  padding-left: 1vw;
-  padding-right: 1vw;
+  height: 60px;
+  padding: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
   text-align: center;
+  font-size: 16px;
 }
 
 #button-contact:hover {

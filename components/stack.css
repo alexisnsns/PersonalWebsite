@@ -33,6 +33,7 @@
 
 .card-stack:hover {
   opacity: 1;
+  transition: 1s;
 }
 
 .language-icons {

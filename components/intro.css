@@ -30,7 +30,6 @@
 
 .introduction {
   position: relative;
-  /* top: 29%; */
   width: 70%;
   font-weight: lighter;
   text-align: left;
@@ -39,23 +38,31 @@
 /* For tablets or smaller desktops */
 @media (max-width: 1024px) {
   .container-intro {
-      width: 70%; /* Slightly larger than on bigger screens */
-      left: 15%;  /* Adjust the position accordingly */
+    width: 70%; /* Slightly larger than on bigger screens */
+    left: 15%; /* Adjust the position accordingly */
+    margin-top: 90px;
+  }
+  .statue {
+    visibility: hidden;
+  }
+
+  .introduction {
+    width: 100%;
   }
 }
 
 /* For mobile devices */
 @media (max-width: 768px) {
   .container-intro {
-      width: 80%; /* Even larger for mobile devices */
-      left: 10%;  /* Center it more */
+    width: 80%; /* Even larger for mobile devices */
+    left: 10%; /* Center it more */
   }
 }
 
 /* For very small screens */
 @media (max-width: 480px) {
   .container-intro {
-      width: 90%; /* Almost full width */
-      left: 5%;   /* Center it as much as possible */
+    width: 90%; /* Almost full width */
+    left: 5%; /* Center it as much as possible */
   }
 }
